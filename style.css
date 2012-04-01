@@ -1,0 +1,73 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+  background: #181e21;
+  color: #85b0bc;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 20px 20px 200px 20px; }
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 50px 0 20px 0;
+  color: white; }
+
+table.plans {
+  width: 960; }
+  table.plans col :nth-child(2n+3) {
+    background-color: white; }
+  table.plans thead tr th {
+    font-size: 1.2em;
+    color: white;
+    padding: 4px 4px 10px 4px;
+    text-align: center; }
+    table.plans thead tr th a.remove {
+      display: block;
+      clear: both;
+      font-size: 0.8em;
+      opacity: 0.3;
+      padding-top: 5px; }
+  table.plans tbody tr td {
+    vertical-align: none;
+    padding: 10px 3px;
+    border-top: 1px solid #2f3437;
+    text-align: center; }
+    table.plans tbody tr td:first-child {
+      padding-left: 5px; }
+    table.plans tbody tr td.feature {
+      text-align: left;
+      padding-left: 5px; }
+    table.plans tbody tr td.create {
+      text-align: left;
+      padding-left: 5px; }
+    table.plans tbody tr td:last-child {
+      padding-right: 5px; }
+    table.plans tbody tr td.with_input {
+      padding: 0; }
+      table.plans tbody tr td.with_input input {
+        font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        padding: 4px;
+        margin: 0;
+        background-color: white;
+        border: 2px solid #85b0bc;
+        width: 80px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #181e21; }
+    table.plans tbody tr td img {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      opacity: 0.1;
+      cursor: hand; }
+  table.plans tbody tr:hover td {
+    background-color: #2f3437; }
+    table.plans tbody tr:hover td:first-child {
+      color: white; }
+    table.plans tbody tr:hover td img {
+      opacity: 1; }

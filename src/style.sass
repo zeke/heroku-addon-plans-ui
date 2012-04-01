@@ -1,0 +1,101 @@
+$background_color: #181e21
+$text_color: #85b0bc
+$highlight_color: #99ED80
+
+=fonty
+  font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif
+
+body
+  +fonty
+  background: $background_color
+  color: $text_color
+  font-size: .8em
+  margin: 0
+  padding: 20px 20px 200px 20px
+  
+h1
+  font-size: 2em
+  font-weight: bold
+  margin: 50px 0 20px 0
+  color: white
+  
+  
+table.plans
+  width: 960
+
+  col :nth-child(2n+3)
+    background-color: #FFF
+  
+  thead
+    tr
+      th
+        font-size: 1.2em
+        color: white
+        padding: 4px 4px 10px 4px
+        text-align: center
+        a.remove
+          display: block
+          clear: both
+          font-size: .8em
+          opacity: .3
+          padding-top: 5px
+          
+        
+  tbody
+    tr
+      td
+        vertical-align: none
+        padding: 10px 3px
+        border-top: 1px solid mix($background_color, #FFF, 90%)
+        text-align: center
+
+        &:first-child
+          padding-left: 5px
+          
+        &.feature
+          text-align: left
+          padding-left: 5px
+      
+        &.create
+          text-align: left
+          padding-left: 5px
+                  
+        &:last-child
+          padding-right: 5px
+
+        &.with_input
+          padding: 0
+          
+          input
+            +fonty
+            -webkit-border-radius: 3px
+            -moz-border-radius: 3px
+            border-radius: 3px
+            padding: 4px
+            margin: 0
+            background-color: mix($text_color, #FFF, 0%)  
+            border: 2px solid $text_color
+  
+            //border: 1px solid mix($background_color, #FFF, 70%)
+            width: 80px
+            text-align: center
+            font-size: .9em
+            color: $background_color
+          
+        img
+          -webkit-transition: all .3s
+          -moz-transition: all .3s
+          -ms-transition: all .3s
+          -o-transition: all .3s
+          transition: all .3s
+          opacity: 0.1
+          cursor: hand
+
+      &:hover
+        td
+          background-color: mix($background_color, #FFF, 90%)
+          &:first-child
+            color: white
+          img
+            opacity: 1
+      

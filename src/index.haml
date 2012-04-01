@@ -1,0 +1,258 @@
+%html
+  %head
+    %script{src: "http://code.jquery.com/jquery.min.js"}    
+    %script{src: "app.js"}
+        
+    %link{href: "http://meyerweb.com/eric/tools/css/reset/reset.css", rel: "stylesheet", type: "text/css"}
+    %link{href: "style.css", rel: "stylesheet", type: "text/css"}
+
+  %body
+    
+    %h1 View
+    
+    %table.plans                
+      %thead
+        %tr
+          %th &nbsp;
+          %th Developer
+          %th Micro
+          %th Micro Plus
+          %th Starter
+          %th Professional
+          %th Premium
+
+      %tbody
+        %colgroup
+          %col
+          %col
+          %col
+          %col
+          %col
+          %col
+          %col
+        %tr
+          %td.feature Cost Per Month
+          %td FREE
+          %td $9
+          %td $7
+          %td $25
+          %td $45
+          %td $85
+
+      %tbody
+        %tr
+          %td.feature Messages Per Month
+          %td 200
+          %td 3,000
+          %td 3,000
+          %td 10,000
+          %td 20,000
+          %td 40,000
+
+      %tbody
+        %tr
+          %td.feature Max Size
+          %td 100 KB
+          %td 500 KB
+          %td 500 KB
+          %td 2 MB
+          %td 10 MB
+          %td 50 MB
+
+      %tbody
+        %tr
+          %td.feature Delivery Status Reports
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          
+      %tbody
+        %tr
+          %td.feature Delivery Report API
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+
+      %tbody
+        %tr
+          %td.feature Custom Domains
+          %td
+          %td
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          
+      %tbody
+        %tr
+          %td.feature S3 Attachments
+          %td
+          %td
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+                              
+      %tbody
+        %tr
+          %td.feature Data Transfer Limit
+          %td 
+          %td 
+          %td 
+          %td 
+          %td 150 GB
+          %td 400 GB
+          
+
+
+    %h1 Edit
+
+    %table.plans                
+      %thead
+        %tr
+          %th &nbsp;
+          %th &nbsp;
+          %th
+            Developer
+            %a.remove (retire)
+          %th
+            Micro
+            %a.remove (retire)            
+          %th
+            Micro Plus
+            %a.remove (retire)
+          %th
+            Starter
+            %a.remove (retire)
+          %th
+            Professional
+            %a.remove (retire)
+          %th
+            Premium
+            %a.remove (retire)
+
+      %tbody
+        %tr
+          %td
+          %td.feature Cost Per Month
+          %td FREE
+          %td $9
+          %td $7
+          %td $25
+          %td $45
+          %td $85
+          %td
+
+        %tr
+          %td
+            %img{src: 'images/delete.png'}
+          %td.feature Messages Per Month
+          %td 200
+          %td.with_input
+            %input{value: 3000}
+          %td 3,000
+          %td 10,000
+          %td 20,000
+          %td 40,000
+
+        %tr
+          %td
+            %img{src: 'images/delete.png'}
+          %td.feature Max Size
+          %td 100 KB
+          %td 500 KB
+          %td 500 KB
+          %td 2 MB
+          %td.with_input
+            %input{value: "10 MB"}
+          %td 50 MB
+
+        %tr
+          %td
+            %img{src: 'images/delete.png'}
+          %td.feature Delivery Status Reports
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          
+        %tr
+          %td
+            %img{src: 'images/delete.png'}
+          %td.feature Delivery Report API
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td.with_input
+            %input{value: "Yes"}
+          %td &#x2713;
+          %td &#x2713;
+
+        %tr
+          %td
+            %img{src: 'images/delete.png'}
+          %td.feature Custom Domains
+          %td
+          %td
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          
+        %tr
+          %td
+            %img{src: 'images/delete.png'}
+          %td.feature S3 Attachments
+          %td
+          %td
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+          %td &#x2713;
+            
+        %tr
+          %td
+            %img{src: 'images/delete.png'}
+          %td.feature Data Transfer Limit
+          %td 
+          %td 
+          %td 
+          %td 
+          %td 150 GB
+          %td 400 GB
+
+        %tr
+          %td
+            %img{src: 'images/delete.png'}
+          %td.feature Awesome Factor
+          %td.with_input
+            %input{value: 2.5}
+          %td.with_input
+            %input
+          %td.with_input
+            %input
+          %td.with_input
+            %input
+          %td.with_input
+            %input
+          %td.with_input
+            %input
+            
+            
+    %ul.options
+      %li
+        %a Add a feature
+      %li
+        %a Add a plan
+      %li
+        %a Save changes
+      %li
+        %a Undo changes
