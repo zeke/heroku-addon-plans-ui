@@ -16,63 +16,45 @@
         
         %p.sensational
           This page will guide you through the process of creating pricing plans for your addon.
-          Here's an example of the kind of pricing matrix you'll create...
+          Here's an example:
     
         %table.plans                
           %thead
             %tr
               %th
-                %h2 Acme Whizbang
+                %h2.acme Acme SMS
               %th Developer
               %th Micro
-              %th Micro Plus
               %th Starter
               %th Professional
-              %th Premium
 
           %tbody
-            %colgroup
-              %col
-              %col
-              %col
-              %col
-              %col
-              %col
-              %col
             %tr
               %td.feature Cost Per Month
               %td FREE
               %td $9
-              %td $7
               %td $25
               %td $45
-              %td $85
 
           %tbody
             %tr
               %td.feature Messages Per Month
               %td 200
               %td 3,000
-              %td 3,000
               %td 10,000
               %td 20,000
-              %td 40,000
 
           %tbody
             %tr
-              %td.feature Max Size
+              %td.feature Maximum Message Size
               %td 100 KB
-              %td 500 KB
               %td 500 KB
               %td 2 MB
               %td 10 MB
-              %td 50 MB
 
           %tbody
             %tr
               %td.feature Delivery Status Reports
-              %td &#x2713;
-              %td &#x2713;
               %td &#x2713;
               %td &#x2713;
               %td &#x2713;
@@ -85,16 +67,12 @@
               %td &#x2713;
               %td &#x2713;
               %td &#x2713;
-              %td &#x2713;
-              %td &#x2713;
 
           %tbody
             %tr
               %td.feature Custom Domains
               %td
               %td
-              %td &#x2713;
-              %td &#x2713;
               %td &#x2713;
               %td &#x2713;
           
@@ -105,35 +83,23 @@
               %td
               %td &#x2713;
               %td &#x2713;
-              %td &#x2713;
-              %td &#x2713;
-                              
-          %tbody
-            %tr
-              %td.feature Data Transfer Limit
-              %td 
-              %td 
-              %td 
-              %td 
-              %td 150 GB
-              %td 400 GB
-
 
       .screen
 
         %div.plan-wizard
 
-          %h1 1. Plans
+          %h2 1. Name Your Plans
         
           %p
             Choose some names and monthly prices for your addon.
             We've suggested some names here but feel free to get creative.
             Most heroku addons have 3 or 4 plans, but you can have as few or many 
             as you want. 
-          
-            You can change all this stuff later, but any change that affects price, features or 
-            availability will trigger a change notice to your existing users, and will require
-            30 days to take effect.
+
+            %em
+              You can change all this stuff later, but any change that affects price, features or 
+              availability will trigger a change notice to your existing users, and will require
+              30 days to take effect.
 
           %table
             %thead
@@ -186,19 +152,11 @@
                   %input
 
 
-              %tr
-                %td.name
-                  %input{placeholder: "Plan Name"}
-                %td.charge
-                  %label $
-                  %input
-
-
       .screen
       
         %div.feature-wizard
           
-          %h1 2. Features
+          %h2 2. List Your Features
         
           %p
             List the features you provide.
@@ -255,7 +213,7 @@
           %thead
             %tr
               %th
-                %h1 3. Configure
+                %h2 3. Configure
               %th
                 Developer
                 %a.remove (remove)

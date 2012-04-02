@@ -10,7 +10,7 @@ body {
   width: 960px; }
 
 .screen {
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
 
 h1 {
   font-size: 2em;
@@ -29,6 +29,13 @@ h2 {
   font-size: 1.4em;
   font-weight: bold;
   color: #99ed80; }
+  h2.acme {
+    color: white;
+    font-size: 1.2em;
+    background: transparent url("images/acme-sms.png") no-repeat left center;
+    padding-left: 32px;
+    padding-top: 12px;
+    height: 34px; }
 
 p {
   font-size: 1.1em;
@@ -38,8 +45,13 @@ p {
     color: red;
     font-weight: bold; }
   p.sensational {
-    font-size: 1.5em;
-    opacity: 0.7; }
+    font-size: 1.2em;
+    opacity: 0.7;
+    padding-bottom: 20px; }
+
+em {
+  font-style: italic;
+  opacity: 0.6; }
 
 div.save a.button {
   background-color: red;
@@ -67,7 +79,7 @@ div.plan-wizard table tbody tr td, div.feature-wizard table tbody tr td {
   div.plan-wizard table tbody tr td input:-moz-placeholder, div.feature-wizard table tbody tr td input:-moz-placeholder {
     color: #464a4d; }
   div.plan-wizard table tbody tr td input, div.feature-wizard table tbody tr td input {
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 4px;
     font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
     color: white;
@@ -111,6 +123,12 @@ table.plans {
     table.plans thead tr th h1 {
       font-size: 1.8em; }
   table.plans tbody tr td {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background-color: #181e21;
     vertical-align: none;
     padding: 10px 3px;
     border-top: 1px solid #2f3437;
@@ -157,8 +175,7 @@ table.plans {
       opacity: 0.1;
       cursor: hand; }
   table.plans tbody tr:hover td {
-    background-color: #2f3437; }
-    table.plans tbody tr:hover td:first-child {
-      color: white; }
+    background-color: #2a2f32;
+    color: white; }
     table.plans tbody tr:hover td img {
       opacity: 1; }

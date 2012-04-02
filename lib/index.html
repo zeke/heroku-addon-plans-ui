@@ -11,40 +11,27 @@
         <h1>Heroku Addon Plan Manager</h1>
         <p class='sensational'>
           This page will guide you through the process of creating pricing plans for your addon.
-          Here's an example of the kind of pricing matrix you'll create...
+          Here's an example:
         </p>
         <table class='plans'>
           <thead>
             <tr>
               <th>
-                <h2>Acme Whizbang</h2>
+                <h2 class='acme'>Acme SMS</h2>
               </th>
               <th>Developer</th>
               <th>Micro</th>
-              <th>Micro Plus</th>
               <th>Starter</th>
               <th>Professional</th>
-              <th>Premium</th>
             </tr>
           </thead>
           <tbody>
-            <colgroup>
-              <col>
-              <col>
-              <col>
-              <col>
-              <col>
-              <col>
-              <col>
-            </colgroup>
             <tr>
               <td class='feature'>Cost Per Month</td>
               <td>FREE</td>
               <td>$9</td>
-              <td>$7</td>
               <td>$25</td>
               <td>$45</td>
-              <td>$85</td>
             </tr>
           </tbody>
           <tbody>
@@ -52,28 +39,22 @@
               <td class='feature'>Messages Per Month</td>
               <td>200</td>
               <td>3,000</td>
-              <td>3,000</td>
               <td>10,000</td>
               <td>20,000</td>
-              <td>40,000</td>
             </tr>
           </tbody>
           <tbody>
             <tr>
-              <td class='feature'>Max Size</td>
+              <td class='feature'>Maximum Message Size</td>
               <td>100 KB</td>
-              <td>500 KB</td>
               <td>500 KB</td>
               <td>2 MB</td>
               <td>10 MB</td>
-              <td>50 MB</td>
             </tr>
           </tbody>
           <tbody>
             <tr>
               <td class='feature'>Delivery Status Reports</td>
-              <td>&#x2713;</td>
-              <td>&#x2713;</td>
               <td>&#x2713;</td>
               <td>&#x2713;</td>
               <td>&#x2713;</td>
@@ -87,8 +68,6 @@
               <td>&#x2713;</td>
               <td>&#x2713;</td>
               <td>&#x2713;</td>
-              <td>&#x2713;</td>
-              <td>&#x2713;</td>
             </tr>
           </tbody>
           <tbody>
@@ -96,8 +75,6 @@
               <td class='feature'>Custom Domains</td>
               <td></td>
               <td></td>
-              <td>&#x2713;</td>
-              <td>&#x2713;</td>
               <td>&#x2713;</td>
               <td>&#x2713;</td>
             </tr>
@@ -109,34 +86,23 @@
               <td></td>
               <td>&#x2713;</td>
               <td>&#x2713;</td>
-              <td>&#x2713;</td>
-              <td>&#x2713;</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td class='feature'>Data Transfer Limit</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>150 GB</td>
-              <td>400 GB</td>
             </tr>
           </tbody>
         </table>
       </div>
       <div class='screen'>
         <div class='plan-wizard'>
-          <h1>1. Plans</h1>
+          <h2>1. Name Your Plans</h2>
           <p>
             Choose some names and monthly prices for your addon.
             We've suggested some names here but feel free to get creative.
             Most heroku addons have 3 or 4 plans, but you can have as few or many
             as you want.
-            You can change all this stuff later, but any change that affects price, features or
-            availability will trigger a change notice to your existing users, and will require
-            30 days to take effect.
+            <em>
+              You can change all this stuff later, but any change that affects price, features or
+              availability will trigger a change notice to your existing users, and will require
+              30 days to take effect.
+            </em>
           </p>
           <table>
             <thead>
@@ -200,22 +166,13 @@
                   <input>
                 </td>
               </tr>
-              <tr>
-                <td class='name'>
-                  <input placeholder='Plan Name'>
-                </td>
-                <td class='charge'>
-                  <label>$</label>
-                  <input>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
       </div>
       <div class='screen'>
         <div class='feature-wizard'>
-          <h1>2. Features</h1>
+          <h2>2. List Your Features</h2>
           <p>
             List the features you provide.
             We've suggested some examples below to get you started.
@@ -286,7 +243,7 @@
           <thead>
             <tr>
               <th>
-                <h1>3. Configure</h1>
+                <h2>3. Configure</h2>
               </th>
               <th>
                 Developer

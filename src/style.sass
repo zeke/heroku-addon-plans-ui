@@ -24,7 +24,7 @@ body
   width: 960px
 
 .screen
-  margin-bottom: 80px
+  margin-bottom: 40px
   
 h1
   font-size: 2em
@@ -43,6 +43,13 @@ h2
   font-size: 1.4em
   font-weight: bold
   color: $highlight_color
+  &.acme
+    color: white
+    font-size: 1.2em
+    background: transparent url('images/acme-sms.png') no-repeat left center
+    padding-left: 32px
+    padding-top: 12px
+    height: 34px
   
 p
   font-size: 1.1em  
@@ -53,9 +60,14 @@ p
     color: red
     font-weight: bold
   &.sensational
-    font-size: 1.5em
+    font-size: 1.2em
     opacity: .7
-  
+    padding-bottom: 20px
+    
+em
+  font-style: italic
+  opacity: .6 
+    
 div.save
   
   a.button
@@ -92,7 +104,7 @@ div.plan-wizard, div.feature-wizard
             color: mix($background_color, white, 80%)
 
           input
-            font-size: 1.3em
+            font-size: 1.1em
             padding: 4px
             +fonty
             color: white
@@ -145,8 +157,14 @@ table.plans
 
         
   tbody
-    tr
+    tr      
       td
+        -webkit-transition: all .3s
+        -moz-transition: all .3s
+        -ms-transition: all .3s
+        -o-transition: all .3s
+        transition: all .3s
+        background-color: $background_color
         vertical-align: none
         padding: 10px 3px
         border-top: 1px solid mix($background_color, #FFF, 90%)
@@ -201,15 +219,14 @@ table.plans
           -moz-transition: all .3s
           -ms-transition: all .3s
           -o-transition: all .3s
-          transition: all .3s
+          transition: all .3s          
           opacity: 0.1
           cursor: hand
 
       &:hover
         td
-          background-color: mix($background_color, #FFF, 90%)
-          &:first-child
-            color: white
+          background-color: mix($background_color, #FFF, 92%)
+          color: white
           img
             opacity: 1
       
