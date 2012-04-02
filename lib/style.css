@@ -6,14 +6,89 @@ body {
   margin: 0;
   padding: 20px 20px 200px 20px; }
 
+#content {
+  width: 960px; }
+
+.screen {
+  margin-bottom: 80px; }
+
 h1 {
   font-size: 2em;
   font-weight: bold;
-  margin: 50px 0 20px 0;
-  color: white; }
+  margin: 0;
+  padding: 30px 0 0 0;
+  color: white;
+  text-align: left; }
+  h1 em {
+    opacity: 0.6;
+    font-size: 0.5em; }
+
+h2 {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #99ed80; }
+
+p {
+  font-size: 1.1em;
+  line-height: 1.3em;
+  padding: 10px 0; }
+  p.warning {
+    color: red;
+    font-weight: bold; }
+  p.sensational {
+    font-size: 1.5em;
+    opacity: 0.7; }
+
+div.save a.button {
+  background-color: red;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=red, endColorstr=#5d1517);
+  background-image: -moz-linear-gradient(center top, red, #5d1517);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(red), to(#5d1517));
+  color: white;
+  padding: 10px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: hand;
+  margin-right: 10px; }
+  div.save a.button.weak {
+    opacity: 0.4;
+    background: none; }
+
+div.plan-wizard table thead tr th, div.feature-wizard table thead tr th {
+  opacity: 0.4;
+  text-align: left; }
+div.plan-wizard table tbody tr td, div.feature-wizard table tbody tr td {
+  padding: 10px 30px 0 0; }
+  div.plan-wizard table tbody tr td ::-webkit-input-placeholder, div.feature-wizard table tbody tr td ::-webkit-input-placeholder {
+    color: #464a4d; }
+  div.plan-wizard table tbody tr td input:-moz-placeholder, div.feature-wizard table tbody tr td input:-moz-placeholder {
+    color: #464a4d; }
+  div.plan-wizard table tbody tr td input, div.feature-wizard table tbody tr td input {
+    font-size: 1.3em;
+    padding: 4px;
+    font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    color: white;
+    background-color: #23292c;
+    border: 1px solid #5d6163;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px; }
+  div.plan-wizard table tbody tr td.name input, div.feature-wizard table tbody tr td.name input {
+    width: 300px; }
+  div.plan-wizard table tbody tr td.charge input, div.feature-wizard table tbody tr td.charge input {
+    width: 60px;
+    text-align: center; }
+
+div.plan-wizard {
+  margin-right: 60px; }
 
 table.plans {
-  width: 960; }
+  float: none;
+  clear: both;
+  width: 100%; }
   table.plans col :nth-child(2n+3) {
     background-color: white; }
   table.plans thead tr th {
@@ -27,6 +102,14 @@ table.plans {
       font-size: 0.8em;
       opacity: 0.3;
       padding-top: 5px; }
+    table.plans thead tr th:first-child {
+      padding: 0; }
+    table.plans thead tr th.micro-plus {
+      color: red; }
+      table.plans thead tr th.micro-plus a.remove {
+        color: white; }
+    table.plans thead tr th h1 {
+      font-size: 1.8em; }
   table.plans tbody tr td {
     vertical-align: none;
     padding: 10px 3px;
@@ -42,6 +125,8 @@ table.plans {
       padding-left: 5px; }
     table.plans tbody tr td:last-child {
       padding-right: 5px; }
+    table.plans tbody tr td.micro-plus {
+      color: red; }
     table.plans tbody tr td.with_input {
       padding: 0; }
       table.plans tbody tr td.with_input input {
@@ -57,6 +142,12 @@ table.plans {
         text-align: center;
         font-size: 0.9em;
         color: #181e21; }
+      table.plans tbody tr td.with_input.feature input {
+        width: 200px;
+        text-align: left; }
+    table.plans tbody tr td a.remove {
+      font-size: 0.9em;
+      opacity: 0.3; }
     table.plans tbody tr td img {
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;

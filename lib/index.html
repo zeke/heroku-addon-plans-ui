@@ -6,290 +6,476 @@
     <link href='style.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <h1>View</h1>
-    <table class='plans'>
-      <thead>
-        <tr>
-          <th>&nbsp;</th>
-          <th>Developer</th>
-          <th>Micro</th>
-          <th>Micro Plus</th>
-          <th>Starter</th>
-          <th>Professional</th>
-          <th>Premium</th>
-        </tr>
-      </thead>
-      <tbody>
-        <colgroup>
-          <col>
-          <col>
-          <col>
-          <col>
-          <col>
-          <col>
-          <col>
-        </colgroup>
-        <tr>
-          <td class='feature'>Cost Per Month</td>
-          <td>FREE</td>
-          <td>$9</td>
-          <td>$7</td>
-          <td>$25</td>
-          <td>$45</td>
-          <td>$85</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td class='feature'>Messages Per Month</td>
-          <td>200</td>
-          <td>3,000</td>
-          <td>3,000</td>
-          <td>10,000</td>
-          <td>20,000</td>
-          <td>40,000</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td class='feature'>Max Size</td>
-          <td>100 KB</td>
-          <td>500 KB</td>
-          <td>500 KB</td>
-          <td>2 MB</td>
-          <td>10 MB</td>
-          <td>50 MB</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td class='feature'>Delivery Status Reports</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td class='feature'>Delivery Report API</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td class='feature'>Custom Domains</td>
-          <td></td>
-          <td></td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td class='feature'>S3 Attachments</td>
-          <td></td>
-          <td></td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <td class='feature'>Data Transfer Limit</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>150 GB</td>
-          <td>400 GB</td>
-        </tr>
-      </tbody>
-    </table>
-    <h1>Edit</h1>
-    <table class='plans'>
-      <thead>
-        <tr>
-          <th>&nbsp;</th>
-          <th>&nbsp;</th>
-          <th>
-            Developer
-            <a class='remove'>(retire)</a>
-          </th>
-          <th>
-            Micro
-            <a class='remove'>(retire)</a>
-          </th>
-          <th>
-            Micro Plus
-            <a class='remove'>(retire)</a>
-          </th>
-          <th>
-            Starter
-            <a class='remove'>(retire)</a>
-          </th>
-          <th>
-            Professional
-            <a class='remove'>(retire)</a>
-          </th>
-          <th>
-            Premium
-            <a class='remove'>(retire)</a>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td class='feature'>Cost Per Month</td>
-          <td>FREE</td>
-          <td>$9</td>
-          <td>$7</td>
-          <td>$25</td>
-          <td>$45</td>
-          <td>$85</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <img src='images/delete.png'>
-          </td>
-          <td class='feature'>Messages Per Month</td>
-          <td>200</td>
-          <td class='with_input'>
-            <input value='3000'>
-          </td>
-          <td>3,000</td>
-          <td>10,000</td>
-          <td>20,000</td>
-          <td>40,000</td>
-        </tr>
-        <tr>
-          <td>
-            <img src='images/delete.png'>
-          </td>
-          <td class='feature'>Max Size</td>
-          <td>100 KB</td>
-          <td>500 KB</td>
-          <td>500 KB</td>
-          <td>2 MB</td>
-          <td class='with_input'>
-            <input value='10 MB'>
-          </td>
-          <td>50 MB</td>
-        </tr>
-        <tr>
-          <td>
-            <img src='images/delete.png'>
-          </td>
-          <td class='feature'>Delivery Status Reports</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-        </tr>
-        <tr>
-          <td>
-            <img src='images/delete.png'>
-          </td>
-          <td class='feature'>Delivery Report API</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td class='with_input'>
-            <input value='Yes'>
-          </td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-        </tr>
-        <tr>
-          <td>
-            <img src='images/delete.png'>
-          </td>
-          <td class='feature'>Custom Domains</td>
-          <td></td>
-          <td></td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-        </tr>
-        <tr>
-          <td>
-            <img src='images/delete.png'>
-          </td>
-          <td class='feature'>S3 Attachments</td>
-          <td></td>
-          <td></td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-          <td>&#x2713;</td>
-        </tr>
-        <tr>
-          <td>
-            <img src='images/delete.png'>
-          </td>
-          <td class='feature'>Data Transfer Limit</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>150 GB</td>
-          <td>400 GB</td>
-        </tr>
-        <tr>
-          <td>
-            <img src='images/delete.png'>
-          </td>
-          <td class='feature'>Awesome Factor</td>
-          <td class='with_input'>
-            <input value='2.5'>
-          </td>
-          <td class='with_input'>
-            <input>
-          </td>
-          <td class='with_input'>
-            <input>
-          </td>
-          <td class='with_input'>
-            <input>
-          </td>
-          <td class='with_input'>
-            <input>
-          </td>
-          <td class='with_input'>
-            <input>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <ul class='options'>
-      <li>
-        <a>Add a feature</a>
-      </li>
-      <li>
-        <a>Add a plan</a>
-      </li>
-      <li>
-        <a>Save changes</a>
-      </li>
-      <li>
-        <a>Undo changes</a>
-      </li>
-    </ul>
+    <div id='content'>
+      <div class='screen'>
+        <h1>Heroku Addon Plan Manager</h1>
+        <p class='sensational'>
+          This page will guide you through the process of creating pricing plans for your addon.
+          Here's an example of the kind of pricing matrix you'll create...
+        </p>
+        <table class='plans'>
+          <thead>
+            <tr>
+              <th>
+                <h2>Acme Whizbang</h2>
+              </th>
+              <th>Developer</th>
+              <th>Micro</th>
+              <th>Micro Plus</th>
+              <th>Starter</th>
+              <th>Professional</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <colgroup>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+              <col>
+            </colgroup>
+            <tr>
+              <td class='feature'>Cost Per Month</td>
+              <td>FREE</td>
+              <td>$9</td>
+              <td>$7</td>
+              <td>$25</td>
+              <td>$45</td>
+              <td>$85</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class='feature'>Messages Per Month</td>
+              <td>200</td>
+              <td>3,000</td>
+              <td>3,000</td>
+              <td>10,000</td>
+              <td>20,000</td>
+              <td>40,000</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class='feature'>Max Size</td>
+              <td>100 KB</td>
+              <td>500 KB</td>
+              <td>500 KB</td>
+              <td>2 MB</td>
+              <td>10 MB</td>
+              <td>50 MB</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class='feature'>Delivery Status Reports</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class='feature'>Delivery Report API</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class='feature'>Custom Domains</td>
+              <td></td>
+              <td></td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class='feature'>S3 Attachments</td>
+              <td></td>
+              <td></td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+              <td>&#x2713;</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class='feature'>Data Transfer Limit</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>150 GB</td>
+              <td>400 GB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class='screen'>
+        <div class='plan-wizard'>
+          <h1>1. Plans</h1>
+          <p>
+            Choose some names and monthly prices for your addon.
+            We've suggested some names here but feel free to get creative.
+            Most heroku addons have 3 or 4 plans, but you can have as few or many
+            as you want.
+            You can change all this stuff later, but any change that affects price, features or
+            availability will trigger a change notice to your existing users, and will require
+            30 days to take effect.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Plan Name</th>
+                <th>Monthly Charge</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class='name'>
+                  <input placeholder='At least one plan is required!' value='Prairie Dog'>
+                </td>
+                <td class='charge'>
+                  <label>$</label>
+                  <input value='0'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Plan Name' value='Fox'>
+                </td>
+                <td class='charge'>
+                  <label>$</label>
+                  <input value='15'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Plan Name' value='Wolf'>
+                </td>
+                <td class='charge'>
+                  <label>$</label>
+                  <input value='35'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Plan Name' value='Bear'>
+                </td>
+                <td class='charge'>
+                  <label>$</label>
+                  <input value='100'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Plan Name'>
+                </td>
+                <td class='charge'>
+                  <label>$</label>
+                  <input>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Plan Name'>
+                </td>
+                <td class='charge'>
+                  <label>$</label>
+                  <input>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Plan Name'>
+                </td>
+                <td class='charge'>
+                  <label>$</label>
+                  <input>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class='screen'>
+        <div class='feature-wizard'>
+          <h1>2. Features</h1>
+          <p>
+            List the features you provide.
+            We've suggested some examples below to get you started.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Feature Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class='name'>
+                  <input placeholder='At least one feature is required!' value='Database size'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Feature Name' value='Requests per month'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Feature Name' value='Admin API access'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Feature Name' value='Analytics'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Feature Name'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Feature Name'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Feature Name'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Feature Name'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Feature Name'>
+                </td>
+              </tr>
+              <tr>
+                <td class='name'>
+                  <input placeholder='Feature Name'>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class='screen'>
+        <table class='plans'>
+          <thead>
+            <tr>
+              <th>
+                <h1>3. Configure</h1>
+              </th>
+              <th>
+                Developer
+                <a class='remove'>(remove)</a>
+              </th>
+              <th>
+                Micro
+                <a class='remove'>(remove)</a>
+              </th>
+              <th class='micro-plus'>
+                Micro Plus
+                <a class='remove'>(undo)</a>
+              </th>
+              <th>
+                Starter
+                <a class='remove'>(remove)</a>
+              </th>
+              <th>
+                Professional
+                <a class='remove'>(remove)</a>
+              </th>
+              <th>
+                Premium
+                <a class='remove'>(remove)</a>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <colgroup>
+              <col span='2' style='color: red'>
+              <col>
+              <col>
+              <col>
+              <col style='color: red'>
+              <col>
+            </colgroup>
+            <tr>
+              <td class='feature'>
+                Cost Per Month
+              </td>
+              <td>FREE</td>
+              <td>$9</td>
+              <td class='micro-plus'>$7</td>
+              <td>$25</td>
+              <td>$45</td>
+              <td>$85</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class='feature'>
+                Messages Per Month
+                <a class='remove'>(remove)</a>
+              </td>
+              <td>200</td>
+              <td class='with_input'>
+                <input value='3000'>
+              </td>
+              <td class='micro-plus'>3,000</td>
+              <td>10,000</td>
+              <td>20,000</td>
+              <td>40,000</td>
+            </tr>
+            <tr>
+              <td class='feature'>
+                Max Size
+                <a class='remove'>(remove)</a>
+              </td>
+              <td>100 KB</td>
+              <td>500 KB</td>
+              <td class='micro-plus'>500 KB</td>
+              <td>2 MB</td>
+              <td class='with_input'>
+                <input value='10 MB'>
+              </td>
+              <td>50 MB</td>
+            </tr>
+            <tr>
+              <td class='feature'>
+                Delivery Status Reports
+                <a class='remove'>(remove)</a>
+              </td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td class='micro-plus'>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class='feature'>
+                Delivery Report API
+                <a class='remove'>(remove)</a>
+              </td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td class='micro-plus'>Yes</td>
+              <td class='with_input'>
+                <input value='Yes'>
+              </td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class='feature'>
+                Custom Domains
+                <a class='remove'>(remove)</a>
+              </td>
+              <td>No</td>
+              <td>No</td>
+              <td class='micro-plus'>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class='feature'>
+                S3 Attachments
+                <a class='remove'>(remove)</a>
+              </td>
+              <td>No</td>
+              <td>No</td>
+              <td class='micro-plus'>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class='feature'>
+                Data Transfer Limit
+                <a class='remove'>(remove)</a>
+              </td>
+              <td></td>
+              <td></td>
+              <td class='micro-plus'></td>
+              <td></td>
+              <td>150 GB</td>
+              <td>400 GB</td>
+            </tr>
+            <tr style='display:none'>
+              <td class='feature with_input'>
+                <input value='Awesome Factor'>
+              </td>
+              <td class='with_input'>
+                <input value='2.5'>
+              </td>
+              <td class='with_input'>
+                <input>
+              </td>
+              <td class='with_input'>
+                <input>
+              </td>
+              <td class='with_input'>
+                <input>
+              </td>
+              <td class='with_input'>
+                <input>
+              </td>
+              <td class='with_input'>
+                <input>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class='options' style='display: none'>
+          <li>
+            <a>Add a feature</a>
+          </li>
+          <li>
+            <a>Add a plan</a>
+          </li>
+          <li>
+            <a>Save changes</a>
+          </li>
+          <li>
+            <a>Undo changes</a>
+          </li>
+        </ul>
+        <div class='save'>
+          <p class='warning'>
+            Any change that affects price, features or availability will be queued for approval by a heroku admin.
+            Upon approval of your changes, we will notify subscribers of the affected plans by email, and the changes
+            will take effect after 30 days.
+          </p>
+          <p>
+            <a class='button'>I understand, save these changes</a>
+            <a class='button weak'>Undo changes</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

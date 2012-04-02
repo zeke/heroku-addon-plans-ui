@@ -1,10 +1,17 @@
 $background_color: #181e21
 $text_color: #85b0bc
 $highlight_color: #99ED80
+$warning_color: red
 
 =fonty
   font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif
 
+=gradient-bg($color1, $color2)
+  background-color: $color1
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2})
+  background-image: -moz-linear-gradient(center top, $color1, $color2)
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2))
+  
 body
   +fonty
   background: $background_color
@@ -13,16 +20,104 @@ body
   margin: 0
   padding: 20px 20px 200px 20px
   
+#content
+  width: 960px
+
+.screen
+  margin-bottom: 80px
+  
 h1
   font-size: 2em
   font-weight: bold
-  margin: 50px 0 20px 0
+  margin: 0
+  padding: 30px 0 0 0
   color: white
-  
-  
-table.plans
-  width: 960
+  text-align: left
+  em
+    opacity: .6
+    font-size: .5em
 
+h2
+  text-align: left
+  padding-left: 5px
+  font-size: 1.4em
+  font-weight: bold
+  color: $highlight_color
+  
+p
+  font-size: 1.1em  
+  line-height: 1.3em  
+  padding: 10px 0
+
+  &.warning
+    color: red
+    font-weight: bold
+  &.sensational
+    font-size: 1.5em
+    opacity: .7
+  
+div.save
+  
+  a.button
+    +gradient-bg($warning_color, mix($warning_color, $background_color, 30%))
+    color: white
+    padding: 10px 10px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+    cursor: hand
+    margin-right: 10px
+    
+    &.weak
+      opacity: .4
+      background: none
+      
+div.plan-wizard, div.feature-wizard
+  
+  table
+    thead
+      tr
+        th
+          opacity: .4
+          text-align: left          
+          
+    tbody
+      tr
+        td
+          padding: 10px 30px 0 0
+                  
+          ::-webkit-input-placeholder
+            color: mix($background_color, white, 80%)
+          input:-moz-placeholder
+            color: mix($background_color, white, 80%)
+
+          input
+            font-size: 1.3em
+            padding: 4px
+            +fonty
+            color: white
+            background-color: mix($background_color, white, 95%)
+            border: 1px solid mix($background_color, white, 70%)
+            -webkit-border-radius: 3px
+            -moz-border-radius: 3px
+            border-radius: 3px
+                    
+          &.name
+            input
+              width: 300px
+          &.charge
+            input
+              width: 60px
+              text-align: center
+
+div.plan-wizard
+  margin-right: 60px
+
+table.plans
+  float: none
+  clear: both
+  width: 100%
+  
   col :nth-child(2n+3)
     background-color: #FFF
   
@@ -39,7 +134,15 @@ table.plans
           font-size: .8em
           opacity: .3
           padding-top: 5px
-          
+        &:first-child
+          padding: 0
+        &.micro-plus
+          color: red
+          a.remove
+            color: white
+        h1
+          font-size: 1.8em
+
         
   tbody
     tr
@@ -62,6 +165,9 @@ table.plans
                   
         &:last-child
           padding-right: 5px
+          
+        &.micro-plus
+          color: red
 
         &.with_input
           padding: 0
@@ -75,13 +181,21 @@ table.plans
             margin: 0
             background-color: mix($text_color, #FFF, 0%)  
             border: 2px solid $text_color
-  
-            //border: 1px solid mix($background_color, #FFF, 70%)
             width: 80px
             text-align: center
             font-size: .9em
             color: $background_color
+            
+          &.feature
+            input
+              width: 200px
+              text-align: left
           
+
+        a.remove
+          font-size: .9em
+          opacity: .3
+
         img
           -webkit-transition: all .3s
           -moz-transition: all .3s
