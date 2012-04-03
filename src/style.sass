@@ -140,10 +140,26 @@ table.plans
   thead
     tr
       th
-        font-size: 1.2em
-        color: white
-        padding: 4px 4px 10px 4px
-        text-align: center
+        input
+          +fonty
+          padding: 4px
+          margin: 0
+          width: 120px
+          text-align: center
+          font-size: 1.2em
+          color: white
+          -webkit-border-radius: 5px
+          -moz-border-radius: 5px
+          border-radius: 5px
+          background-color: $background_color
+          border: 1px solid $background_color
+          outline-color: $highlight_color
+          &:hover, &:active,
+            color: white
+            background-color: mix($background_color, black, 95%)
+            border-bottom-color: mix($background_color, white, 90%)
+            border-right-color: mix($background_color, white, 90%)
+            
         a.remove
           display: block
           clear: both
@@ -152,13 +168,12 @@ table.plans
           padding-top: 5px
         &:first-child
           padding: 0
-        &.micro-plus
+        &.staged_for_deletion
           color: red
           a.remove
             color: white
         h1
           font-size: 1.8em
-
         
   tbody
     tr      
@@ -188,44 +203,33 @@ table.plans
         &:last-child
           padding-right: 5px
           
-        &.micro-plus
+        &.staged_for_deletion
           color: red
-
-        &.with_input
-          padding: 0
           
-          input
-            +fonty
-            -webkit-border-radius: 3px
-            -moz-border-radius: 3px
-            border-radius: 3px
-            padding: 4px
-            margin: 0
-            background-color: mix($text_color, #FFF, 0%)  
-            border: 2px solid $text_color
-            width: 80px
-            text-align: center
-            font-size: .9em
-            color: $background_color
-            
-            // Make it look like the wizard input!
+        input
+          +fonty
+          padding: 4px
+          margin: 0
+          width: 80px
+          text-align: center
+          font-size: .9em
+          color: $text_color
+          -webkit-border-radius: 5px
+          -moz-border-radius: 5px
+          border-radius: 5px
+          background-color: $background_color
+          border: 1px solid $background_color
+          outline-color: $highlight_color
+          &:hover, &:active,
             color: white
             background-color: mix($background_color, black, 95%)
-            border: 1px solid $background_color
             border-bottom-color: mix($background_color, white, 90%)
             border-right-color: mix($background_color, white, 90%)
-            -webkit-border-radius: 5px
-            -moz-border-radius: 5px
-            border-radius: 5px
-            outline-color: $highlight_color
 
-            
-            
-          &.feature
-            input
-              width: 200px
-              text-align: left
-          
+        &.feature
+          input
+            width: 200px
+            text-align: left
 
         a.remove
           font-size: .9em

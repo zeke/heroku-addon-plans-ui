@@ -96,11 +96,6 @@
             Most heroku addons have 3 or 4 plans, but you can have as few or many 
             as you want. 
 
-            %em
-              You can change all this stuff later, but any change that affects price, features or 
-              availability will trigger a change notice to your existing users, and will require
-              30 days to take effect.
-
           %table
             %thead
               %tr
@@ -128,7 +123,7 @@
                   %input{value: "Wolf", placeholder: "Plan Name"}
                 %td.charge
                   %label $
-                  %input{value: "35"}
+                  %input{value: "45"}
           
               %tr
                 %td.name
@@ -215,101 +210,92 @@
               %th
                 %h2 3. Configure
               %th
-                Prairie Dog
+                %input{value: "Prairie Dog"}
               %th
-                Fox
-                %a.remove (remove)            
-              %th.micro-plus
-                Wolf
-                %a.remove (undo)
+                %input{value: "Fox"}
+                -# %a.remove (remove)            
+              %th.staged_for_deletion
+                %input{value: "Wolf"}
+                -# %a.remove (undo)
               %th
-                Bear
-                %a.remove (remove)
+                %input{value: "Bear"}
+                -# %a.remove (remove)
 
           %tbody
             %tr
               %td.feature
                 Cost Per Month
-              %td FREE
-              %td $9
-              %td.micro-plus $7
-              %td $25
+              %td
+                %input{value: "FREE"}
+              %td
+                %input{value: "$15"}
+              %td.staged_for_deletion
+                %input{value: "$45"}              
+              %td
+                %input{value: "$100"}
 
             %tr
               %td.feature
-                Messages Per Month
-                %a.remove (remove)
-              %td 200
-              %td.with_input
-                %input{value: 3000}
-              %td.micro-plus 3,000
-              %td 10,000
+                %input{value: "Database size"}
+                -# %a.remove (remove)
+              %td
+                %input{value: "100 MB"}
+              %td
+                %input{value: "2 GB"}
+              %td.staged_for_deletion
+                %input{value: "10 GB"}
+              %td
+                %input{value: "100 GB"}
 
             %tr
               %td.feature
-                Max Size
-                %a.remove (remove)
-              %td 100 KB
-              %td 500 KB
-              %td.micro-plus 500 KB
-              %td 2 MB
+                %input{value: "Requests Per Month"}
+                -# %a.remove (remove)
+              %td
+                %input{value: "100KB"}
+              %td
+                %input{value: "500 KB"}
+              %td.staged_for_deletion
+                %input{value: "500 KB"}
+              %td
+                %input{value: "2 MB"}
 
             %tr
               %td.feature
-                Delivery Status Reports
-                %a.remove (remove)
-              %td Yes
-              %td Yes
-              %td.micro-plus Yes
-              %td Yes
+                %input{value: "Admin API Access"}
+                -# %a.remove (remove)
+              %td
+                %input{value: ""}
+              %td
+                %input{value: ""}
+              %td.staged_for_deletion
+                %input{value: "Yes"}
+              %td
+                %input{value: "Yes"}
           
             %tr
               %td.feature
-                Delivery Report API
-                %a.remove (remove)
-              %td Yes
-              %td Yes
-              %td.micro-plus Yes
-              %td.with_input
+                %input{value: "Analytics"}
+                -# %a.remove (remove)
+              %td
+                %input{value: ""}
+              %td
+                %input{value: ""}
+              %td.staged_for_deletion
+                %input{value: ""}
+              %td
                 %input{value: "Yes"}
 
-            %tr
-              %td.feature
-                Custom Domains
-                %a.remove (remove)
-              %td No
-              %td No
-              %td.micro-plus Yes
-              %td Yes
-          
-            %tr
-              %td.feature
-                S3 Attachments
-                %a.remove (remove)
-              %td No
-              %td No
-              %td.micro-plus Yes
-              %td Yes
-            
-            %tr
-              %td.feature
-                Data Transfer Limit
-                %a.remove (remove)
-              %td 
-              %td 
-              %td.micro-plus 
-              %td 
-
             %tr{style: "display:none"}
-              %td.feature.with_input
+              %td.feature
                 %input{value: "Awesome Factor"}
-              %td.with_input
+              %td
                 %input{value: 2.5}
-              %td.with_input
+              %td
                 %input
-              %td.with_input
+              %td
                 %input
-              %td.with_input
+              %td
                 %input
             
             

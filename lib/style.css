@@ -107,25 +107,39 @@ table.plans {
   width: 100%; }
   table.plans col :nth-child(2n+3) {
     background-color: white; }
-  table.plans thead tr th {
+  table.plans thead tr th input {
+    font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+    padding: 4px;
+    margin: 0;
+    width: 120px;
+    text-align: center;
     font-size: 1.2em;
     color: white;
-    padding: 4px 4px 10px 4px;
-    text-align: center; }
-    table.plans thead tr th a.remove {
-      display: block;
-      clear: both;
-      font-size: 0.8em;
-      opacity: 0.3;
-      padding-top: 5px; }
-    table.plans thead tr th:first-child {
-      padding: 0; }
-    table.plans thead tr th.micro-plus {
-      color: red; }
-      table.plans thead tr th.micro-plus a.remove {
-        color: white; }
-    table.plans thead tr th h1 {
-      font-size: 1.8em; }
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #181e21;
+    border: 1px solid #181e21;
+    outline-color: #99ed80; }
+    table.plans thead tr th input:hover, table.plans thead tr th input:active {
+      color: white;
+      background-color: #161c1f;
+      border-bottom-color: #2f3437;
+      border-right-color: #2f3437; }
+  table.plans thead tr th a.remove {
+    display: block;
+    clear: both;
+    font-size: 0.8em;
+    opacity: 0.3;
+    padding-top: 5px; }
+  table.plans thead tr th:first-child {
+    padding: 0; }
+  table.plans thead tr th.staged_for_deletion {
+    color: red; }
+    table.plans thead tr th.staged_for_deletion a.remove {
+      color: white; }
+  table.plans thead tr th h1 {
+    font-size: 1.8em; }
   table.plans tbody tr td {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -147,35 +161,30 @@ table.plans {
       padding-left: 5px; }
     table.plans tbody tr td:last-child {
       padding-right: 5px; }
-    table.plans tbody tr td.micro-plus {
+    table.plans tbody tr td.staged_for_deletion {
       color: red; }
-    table.plans tbody tr td.with_input {
-      padding: 0; }
-      table.plans tbody tr td.with_input input {
-        font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        padding: 4px;
-        margin: 0;
-        background-color: white;
-        border: 2px solid #85b0bc;
-        width: 80px;
-        text-align: center;
-        font-size: 0.9em;
-        color: #181e21;
+    table.plans tbody tr td input {
+      font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+      padding: 4px;
+      margin: 0;
+      width: 80px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #85b0bc;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background-color: #181e21;
+      border: 1px solid #181e21;
+      outline-color: #99ed80; }
+      table.plans tbody tr td input:hover, table.plans tbody tr td input:active {
         color: white;
         background-color: #161c1f;
-        border: 1px solid #181e21;
         border-bottom-color: #2f3437;
-        border-right-color: #2f3437;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-        outline-color: #99ed80; }
-      table.plans tbody tr td.with_input.feature input {
-        width: 200px;
-        text-align: left; }
+        border-right-color: #2f3437; }
+    table.plans tbody tr td.feature input {
+      width: 200px;
+      text-align: left; }
     table.plans tbody tr td a.remove {
       font-size: 0.9em;
       opacity: 0.3; }
