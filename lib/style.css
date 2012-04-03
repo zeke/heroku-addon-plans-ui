@@ -71,7 +71,8 @@ div.save a.button {
 
 div.plan-wizard table thead tr th, div.feature-wizard table thead tr th {
   opacity: 0.4;
-  text-align: left; }
+  text-align: left;
+  padding-left: 5px; }
 div.plan-wizard table tbody tr td, div.feature-wizard table tbody tr td {
   padding: 10px 30px 0 0; }
   div.plan-wizard table tbody tr td ::-webkit-input-placeholder, div.feature-wizard table tbody tr td ::-webkit-input-placeholder {
@@ -83,11 +84,14 @@ div.plan-wizard table tbody tr td, div.feature-wizard table tbody tr td {
     padding: 4px;
     font-family: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
     color: white;
-    background-color: #23292c;
-    border: 1px solid #5d6163;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px; }
+    background-color: #161c1f;
+    border: 1px solid #181e21;
+    border-bottom-color: #2f3437;
+    border-right-color: #2f3437;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    outline-color: #99ed80; }
   div.plan-wizard table tbody tr td.name input, div.feature-wizard table tbody tr td.name input {
     width: 300px; }
   div.plan-wizard table tbody tr td.charge input, div.feature-wizard table tbody tr td.charge input {
@@ -159,7 +163,16 @@ table.plans {
         width: 80px;
         text-align: center;
         font-size: 0.9em;
-        color: #181e21; }
+        color: #181e21;
+        color: white;
+        background-color: #161c1f;
+        border: 1px solid #181e21;
+        border-bottom-color: #2f3437;
+        border-right-color: #2f3437;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        outline-color: #99ed80; }
       table.plans tbody tr td.with_input.feature input {
         width: 200px;
         text-align: left; }
