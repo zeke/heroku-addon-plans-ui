@@ -12,362 +12,58 @@
 
       .screen
         
-        %h1 Heroku Addon Plan Manager
-        
-        %p.sensational
-          This page will guide you through the process of creating pricing plans for your addon.
-          Here's an example:
-    
-        %table.plans                
-          %thead
-            %tr
-              %th
-                %h2.acme Acme SMS
-              %th Developer
-              %th Micro
-              %th Starter
-              %th Professional
+        %ul.plans
 
-          %tbody
-            %tr
-              %td.feature Cost Per Month
-              %td FREE
-              %td $9
-              %td $25
-              %td $45
-
-          %tbody
-            %tr
-              %td.feature Messages Per Month
-              %td 200
-              %td 3,000
-              %td 10,000
-              %td 20,000
-
-          %tbody
-            %tr
-              %td.feature Maximum Message Size
-              %td 100 KB
-              %td 500 KB
-              %td 2 MB
-              %td 10 MB
-
-          %tbody
-            %tr
-              %td.feature Delivery Status Reports
-              %td &#x2713;
-              %td &#x2713;
-              %td &#x2713;
-              %td &#x2713;
-          
-          %tbody
-            %tr
-              %td.feature Delivery Report API
-              %td &#x2713;
-              %td &#x2713;
-              %td &#x2713;
-              %td &#x2713;
-
-          %tbody
-            %tr
-              %td.feature Custom Domains
-              %td
-              %td
-              %td &#x2713;
-              %td &#x2713;
-          
-          %tbody
-            %tr
-              %td.feature S3 Attachments
-              %td
-              %td
-              %td &#x2713;
-              %td &#x2713;
-
-      .screen
-
-        %div.plan-wizard
-
-          %h2 1. Name Your Plans
-        
-          %p
-            Choose some names and monthly prices for your addon.
-            We've suggested some names here but feel free to get creative.
-            Most heroku addons have 3 or 4 plans, but you can have as few or many 
-            as you want. 
-
-            %em
-              You can change all this stuff later, but any change that affects price, features or 
-              availability will trigger a change notice to your existing users, and will require
-              30 days to take effect.
-
-          %table
-            %thead
-              %tr
-                %th Plan Name
-                %th Monthly Charge
+          %li.plan.a
+            %h2
+              $0
+              %em /month
+            %h3 Ferret
+            -# %p
+            -#   A dinky little plan to get you off and running.
+            %ul
+              %li 5 MB Database
+              %li 200 Requests/Day
+              %li No Technical Support
               
-            %tbody
-
-              %tr
-                %td.name
-                  %input{value: "Prairie Dog", placeholder: "At least one plan is required!"}
-                %td.charge
-                  %label $
-                  %input{value: "0"}
-            
-              %tr
-                %td.name
-                  %input{value: "Fox", placeholder: "Plan Name"}
-                %td.charge
-                  %label $
-                  %input{value: "15"}
-
-              %tr
-                %td.name
-                  %input{value: "Wolf", placeholder: "Plan Name"}
-                %td.charge
-                  %label $
-                  %input{value: "35"}
-          
-              %tr
-                %td.name
-                  %input{value: "Bear", placeholder: "Plan Name"}
-                %td.charge
-                  %label $
-                  %input{value: "100"}
-
-              %tr
-                %td.name
-                  %input{placeholder: "Plan Name"}
-                %td.charge
-                  %label $
-                  %input
-
-              %tr
-                %td.name
-                  %input{placeholder: "Plan Name"}
-                %td.charge
-                  %label $
-                  %input
-
-
-      .screen
-      
-        %div.feature-wizard
-          
-          %h2 2. List Your Features
-        
-          %p
-            List the features you provide.
-            We've suggested some examples below to get you started.
-
-          %table
-            %thead
-              %tr
-                %th Feature Name  
+          %li.plan.b
+            %h2
+              $5
+              %em /month
+            %h3 Beaver
+            -# %p
+            -#   A hard-working little plan, with a bit more power than a ferret.
+            %ul
+              %li 20 MB Database
+              %li 100 Requests/Day
+              %li No Technical Support
               
-            %tbody
-
-              %tr
-                %td.name
-                  %input{value: "Database size", placeholder: "At least one feature is required!"}
-              %tr
-                %td.name
-                  %input{value: "Requests per month", placeholder: "Feature Name"}
-                              
-              %tr
-                %td.name
-                  %input{value: "Admin API access", placeholder: "Feature Name"}
-
-              %tr
-                %td.name
-                  %input{value: "Analytics", placeholder: "Feature Name"}
-
-              %tr
-                %td.name
-                  %input{placeholder: "Feature Name"}
-                
-              %tr
-                %td.name
-                  %input{placeholder: "Feature Name"}
-                
-              %tr
-                %td.name
-                  %input{placeholder: "Feature Name"}
-                
-              %tr
-                %td.name
-                  %input{placeholder: "Feature Name"}
-                
-              %tr
-                %td.name
-                  %input{placeholder: "Feature Name"}
-                
-              %tr
-                %td.name
-                  %input{placeholder: "Feature Name"}
-
-      .screen
-        %table.plans
-          %thead
-            %tr
-              %th
-                %h2 3. Configure
-              %th
-                Developer
-                %a.remove (remove)
-              %th
-                Micro
-                %a.remove (remove)            
-              %th.micro-plus
-                Micro Plus
-                %a.remove (undo)
-              %th
-                Starter
-                %a.remove (remove)
-              %th
-                Professional
-                %a.remove (remove)
-              %th
-                Premium
-                %a.remove (remove)
-
-          %tbody
-        
-            %colgroup
-              %col{span: "2", style: "color: red"}
-              %col
-              %col
-              %col
-              %col{style: "color: red"}
-              %col
-                
-            %tr
-              %td.feature
-                Cost Per Month
-              %td FREE
-              %td $9
-              %td.micro-plus $7
-              %td $25
-              %td $45
-              %td $85
-              %td
-
-            %tr
-              %td.feature
-                Messages Per Month
-                %a.remove (remove)
-              %td 200
-              %td.with_input
-                %input{value: 3000}
-              %td.micro-plus 3,000
-              %td 10,000
-              %td 20,000
-              %td 40,000
-
-            %tr
-              %td.feature
-                Max Size
-                %a.remove (remove)
-              %td 100 KB
-              %td 500 KB
-              %td.micro-plus 500 KB
-              %td 2 MB
-              %td.with_input
-                %input{value: "10 MB"}
-              %td 50 MB
-
-            %tr
-              %td.feature
-                Delivery Status Reports
-                %a.remove (remove)
-              %td Yes
-              %td Yes
-              %td.micro-plus Yes
-              %td Yes
-              %td Yes
-              %td Yes
-          
-            %tr
-              %td.feature
-                Delivery Report API
-                %a.remove (remove)
-              %td Yes
-              %td Yes
-              %td.micro-plus Yes
-              %td.with_input
-                %input{value: "Yes"}
-              %td Yes
-              %td Yes
-
-            %tr
-              %td.feature
-                Custom Domains
-                %a.remove (remove)
-              %td No
-              %td No
-              %td.micro-plus Yes
-              %td Yes
-              %td Yes
-              %td Yes
-          
-            %tr
-              %td.feature
-                S3 Attachments
-                %a.remove (remove)
-              %td No
-              %td No
-              %td.micro-plus Yes
-              %td Yes
-              %td Yes
-              %td Yes
-            
-            %tr
-              %td.feature
-                Data Transfer Limit
-                %a.remove (remove)
-              %td 
-              %td 
-              %td.micro-plus 
-              %td 
-              %td 150 GB
-              %td 400 GB
-
-            %tr{style: "display:none"}
-              %td.feature.with_input
-                %input{value: "Awesome Factor"}
-              %td.with_input
-                %input{value: 2.5}
-              %td.with_input
-                %input
-              %td.with_input
-                %input
-              %td.with_input
-                %input
-              %td.with_input
-                %input
-              %td.with_input
-                %input
-            
-            
-        %ul.options{style: "display: none"}
-          %li
-            %a Add a feature
-          %li
-            %a Add a plan
-          %li
-            %a Save changes
-          %li
-            %a Undo changes
-      
-        %div.save  
-          %p.warning
-            Any change that affects price, features or availability will be queued for approval by a heroku admin.
-            Upon approval of your changes, we will notify subscribers of the affected plans by email, and the changes 
-            will take effect after 30 days.
-
-          %p
-            %a.button I understand, save these changes
-            %a.button.weak Undo changes
-      
+          %li.plan.c
+            %h2
+              $50
+              %em /month
+            %h3 Bear
+            -# %p
+            -#   Tough enough to handle most jobs, but still nimble enough to eat berries.
+            %ul
+              %li 1 GB Database
+              %li 500 Requests/Day
+              %li Technical Support
+              %li Night Vision Goggles
+              
+          %li.plan.d
+            %h2
+              $100
+              %em /month
+            %h3 Velociraptor
+            -# %p
+            -#   Really fast and scary, just like in Jurassic Park.
+            %ul
+              %li 5 MB Database
+              %li 5,000 Requests/Day
+              %li Technical Support
+              %li Night Vision Goggles
+              %li Lunch Box
+              
+          %li.plan.new
+            %h2 New Plan
